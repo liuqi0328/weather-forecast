@@ -1,12 +1,16 @@
 import React from 'react';
-import { RouteHandler } from 'react-router';
+import { RouteHandler } from 'react-router-dom';
+// import Navbar from './Navbar';
+// import Footer from './Footer';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <RouterHandler />
+                <RouteHandler />
             </div>
         );
     }
 }
+
+export default App;

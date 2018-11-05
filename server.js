@@ -5,8 +5,8 @@ var bodyParser = require('body-parser');
 
 var ejs = require('ejs');
 var React = require('react');
-var Router = require('react-router');
-var route = require('./app/routes');
+var Router = require('react-router-dom');
+var routes = require('./app/routes');
 
 var app = express();
 

@@ -2,9 +2,6 @@
   "name": "weather-forecast",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liuqi0328/weather-forecast.git"
@@ -18,10 +15,14 @@
     "url": "https://github.com/liuqi0328/weather-forecast/issues"
   },
   "homepage": "https://github.com/liuqi0328/weather-forecast#readme",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node server.js",
+    "watch": "nodemon --exec babel-node -- server.js"
+  },
   "dependencies": {
     "alt": "^0.18.6",
     "async": "^2.6.1",
-    "babel": "^6.23.0",
     "cookie-parser": "~1.4.3",
     "create-react-app": "^2.1.1",
     "debug": "~2.6.9",
@@ -33,13 +34,14 @@
     "morgan": "~1.9.0",
     "npm": "^6.4.1",
     "react": "^16.6.0",
-    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "socket.io": "^2.1.1",
     "websocket": "^1.0.28"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babelify": "^6.1.3",
     "bower": "^1.4.1",
     "browserify": "^11.2.0",
