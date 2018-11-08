@@ -134,7 +134,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-// import { Route } from 'react-router-dom';
+var _reactRouterDom = require('react-router-dom');
 
 var _componentsApp = require('./components/App');
 
@@ -144,12 +144,10 @@ var _componentsHome = require('./components/Home');
 
 var _componentsHome2 = _interopRequireDefault(_componentsHome);
 
-var Route = require('react-router-dom');
-
 exports['default'] = _react2['default'].createElement(
-    Route,
+    _reactRouterDom.Route,
     { handler: _componentsApp2['default'] },
-    _react2['default'].createElement(Route, { path: '/', handler: _componentsHome2['default'] })
+    _react2['default'].createElement(_reactRouterDom.Route, { path: '/', handler: _componentsHome2['default'] })
 );
 module.exports = exports['default'];
 
