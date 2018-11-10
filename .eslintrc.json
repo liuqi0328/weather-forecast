@@ -3,7 +3,7 @@
     "node": true,
     "es6": true
   },
-  "extends": "airbnb",
+  "extends": "strongloop",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
