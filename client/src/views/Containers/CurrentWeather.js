@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -6,7 +6,7 @@ import { weatherIcon } from '../../utils';
 import * as actions from '../../store/actions/index';
 import { WeatherCardError, Loader } from '../Components/index';
 
-class CurrentWeather extends Component {
+class CurrentWeather extends React.Component {
   constructor(props) {
     super(props);
 
