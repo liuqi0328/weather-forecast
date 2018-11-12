@@ -15,7 +15,7 @@ class CurrentWeather extends React.Component {
     super(props);
 
     this.state = ({
-      isLoading: true,
+      isLoading: false,
       currentTemp: '',
       humidity: '',
       wind: '',
@@ -40,6 +40,7 @@ class CurrentWeather extends React.Component {
           });
         } else {
           // Determine weather icon
+          console.log(data.data.weather);
           let weatherId = data.data.weather[0].id;
 
           if (weatherId <= 232) {

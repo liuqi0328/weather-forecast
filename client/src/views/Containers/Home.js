@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <div className='header'>
         <h2>Weather Forcast</h2>
-        <img src={LightningBolt}/>
+        <img src={LightningBolt} alt=''/>
       </div>
 
       <div className="instructions">
